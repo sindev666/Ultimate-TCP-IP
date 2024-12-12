@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{abf0dda5-7c96-49ed-82bc-9873f41e80be}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8a63b09f-49ba-4918-a9d4-2018cdd562dd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{116e0d4b-4ea1-44ea-9c57-1d10d725da81}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Ultimate TCP/IP v3.0 Files">
+      <UniqueIdentifier>{fe379608-91f8-4687-8cd3-bc192a212b25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConnectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateFolderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMAPClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMAPClientDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageFolderView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\imap4_c.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\ut_clnt.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\UT_HeaderEncoding.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\UT_StrOp.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\UTDataSource.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\UTFile.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\UTMessage.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Utmime.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\utstrlst.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\UTUUEncode.cpp">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IMAPClient.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConnectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateFolderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMAPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMAPClientDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageFolderView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\UTSecureSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\imap4_c.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\ut_clnt.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\UT_HeaderEncoding.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\ut_strop.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\UTDataSource.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\UTEncode.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\uterr.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\utfile.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\UTMessage.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\Utmime.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\utstrlst.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\UTUUEncode.h">
+      <Filter>Ultimate TCP/IP v3.0 Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\IMAPClient.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IMAPClientDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\IMAPClient.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

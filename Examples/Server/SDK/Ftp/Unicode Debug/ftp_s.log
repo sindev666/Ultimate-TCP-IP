@@ -1,0 +1,22 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: Свойству "IntermediateOutputPath" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: Свойству "DebugType" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: Свойству "CleanFile" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  test.cpp
+  UT_StrOp.cpp
+  UT_SrvrT.cpp
+  UT_SrvrS.cpp
+  ut_clnt.cpp
+  UT_AccessControl.cpp
+  utstrlst.cpp
+  utfile.cpp
+  UTDataSource.cpp
+  uh_ctrl.cpp
+P:\ide\Ultimate TCP-IP\Source\uh_ctrl.cpp(1114,39): warning C4456: объявление "old" скрывает предыдущее локальное объявление
+P:\ide\Ultimate TCP-IP\Source\uh_ctrl.cpp(1073,25): message : см. объявление "old"
+  ftp_s.cpp
+P:\ide\Ultimate TCP-IP\Source\ftp_s.cpp(1383,19): warning C4456: объявление "len" скрывает предыдущее локальное объявление
+P:\ide\Ultimate TCP-IP\Source\ftp_s.cpp(1304,13): message : см. объявление "len"
+  Создание кода...
+ftp_s.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+  ftp_s.vcxproj -> P:\ide\Ultimate TCP-IP\Examples\Server\SDK\Ftp\Unicode Debug\ftp_s.exe

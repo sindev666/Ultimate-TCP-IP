@@ -1,0 +1,224 @@
+{\rtf1\ansi\ansicpg1252\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss Arial;}{\f3\fnil W;}{\f4\fswiss Arial;}{\f5\fnil\fprq10 Arial;}}
+{\colortbl\red0\green0\blue0;}
+\deflang1033\pard\plain\f5\fs16\cf0 {\cs22\super #{\footnote {\cs22\super #} IDH_10002}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Enter the domain name (e.g. dundas.com) or top-level domain (e.g. 'us', 'ca', 'com', etc.) you wish to obtain information for.
+\par 
+\par 
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10003}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 An Athoritative Lookup essentially locates a DNS database that contains the detailed records for that domain's nodes and sub-nodes.  
+\par 
+\par Authoritative lookups are necessary to retrieve most of the records listed in the Query Type combo.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10004}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Click this button to perform a basic DNS lookup. 
+\par 
+\par A basic lookup can get the info it needs from a root level DNS server.  Host (A) and Authoritative Name Server (NS) data are returned.  
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10005}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 You can select a query type to use that will lessen the amount of information returned from an Authorized Lookup.
+\par 
+\par Note that relevant NS and Host records will be retrieved along with the desired records.  If no records of the selected type exist, a blank record will be returned.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10006}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Type the path and name of the file to receive the output written to the History control.
+\par 
+\par Each new query clears the contents of the control.  Data logged to file will accumulate.
+\par 
+\par You can use the same file for this and other dialog pages if you wish to organize a session into one log.
+\par 
+\par 
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10007}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to log all data written to the history control to a file.
+\par 
+\par Data written to the log file will be appended to the end of the file.  
+\par 
+\par Tabs stops are translated as 8 character in the control, and are not replaced with spaces when data is written to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10008}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Enter the name of the server to query.  Typically this will be the name of a root level domain name service server.
+\par 
+\par For a list of other root servers, you can enter 'com', 'org', 'edu', etc in the Domain field.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10009}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The output display is an instance of a History control that ships with Ultimate TCP/IP. 
+\par 
+\par The control privides for date stamping and logging to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10011}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to use a UDP based DNS query.
+\par 
+\par DNS servers can operate using TCP based connections or UDP datagrams.  Some severs respond to both.  
+\par 
+\par Try using a UDP based query if a particular server is unresponsive to the default TCP connection.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10016}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Enter a Finger query here.
+\par 
+\par The basic form of a finger query mimics an e-mail address - e.g. query@finger.edu. Some servers respond to a null query (@server.com) with a list of users similar to the Unix 'who' command.  Others have specific data available for users, and can respond to wildcards etc.  Try help@mit.edu as an example.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10017}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Executes the Finger query.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10019}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The output display is an instance of a History control that ships with Ultimate TCP/IP. 
+\par 
+\par The control privides for date stamping and logging to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10020}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Each new query clears the contents of the control.  Data logged to file will accumulate.
+\par 
+\par You can use the same file for this and other dialog pages if you wish to organize a session into one log.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10022}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to log all data written to the history control to a file.
+\par 
+\par Data written to the log file will be appended to the end of the file.  
+\par 
+\par Tabs stops are translated as 8 character in the control, and are not replaced with spaces when data is written to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10024}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The address of the machine to trace the path to.
+\par 
+\par This can take the form of a domain name (dundas.com) or a dotted IP address (207.219.70.5).
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10025}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Trace the route to the target machine.
+\par 
+\par The underlying ICMP class uses the traditional IP v4 ICMP method of tracing the route to the remote host.  This method may not reveal the return route.
+\par 
+\par The class uses a socket type SOCK_RAW.  On  Windows NT, the user must be logged on with administrator rights to create this type of socket.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10026}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Specifies a time to wait for a response to an ICMP query.  
+\par 
+\par Use this parameter as a limiting factor.  Small values tend only to shift the receipt of an ICMP resopnse to a subsequent receipt.  The real intention of this value is to retreat from listening for packets that will not be responded to.  Many busy hosts will maintain firewalls to absorb ICMP requests, and not all will respond with a Destination Unreachable code.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10027}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The number of bytes of data to send with the ICMP request.
+\par 
+\par Be conservative here, unless you have good reason to map statistics related to performance issues for a trace.  32 bytes is fine for most purposes.  Sending Ping or TraceRoute ICMP requests with large amounts of data uses resources both in transit and at the target machine.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10028}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The maximum number of hops to examine.
+\par 
+\par This corresponds to the Time To Live value for the ICPM Ping packets, and the maximum TTL value for a series of TraceRoute ICMP packets.  Increase this value if a Trace ends with a Time Exceeded message.
+\par 
+\par 64 is mentioned as a default value for Ping or TraceRoute, but in practice 30 or less hops are sufficient to obtain a termination response (one of Echo reply or Destination unreachable).
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10029}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 If checked, the domain name for the response will be resolved (if possible) and displayed.
+\par 
+\par The IP packet carrying the ICMP response contains the IP address of the sender.  In most cases this can be resolved to a readble internet name.  
+\par 
+\par Use of this option can slow the operation considerably.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10030}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Each new query clears the contents of the control.  Data logged to file will accumulate.
+\par 
+\par You can use the same file for this and other dialog pages if you wish to organize a session into one log.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10031}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to log all data written to the history control to a file.
+\par 
+\par Data written to the log file will be appended to the end of the file.  
+\par 
+\par Tabs stops are translated as 8 character in the control, and are not replaced with spaces when data is written to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10032}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The output display is an instance of a History control that ships with Ultimate TCP/IP. 
+\par 
+\par The control privides for date stamping and logging to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10048}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The WhoIs query to execute.
+\par 
+\par Often you will be interested in contact information for a specific domain, e.g. dundas.com.  Typcally company contact and domain administrative data is returned.
+\par 
+\par Other queries can be more general.  If you are interested in finding out if a domain name is available, or just want to poke around, just about any word or name will invoke some response.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10049}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Executes the WhoIs query.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10050}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Each new query clears the contents of the control.  Data logged to file will accumulate.
+\par 
+\par You can use the same file for this and other dialog pages if you wish to organize a session into one log.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10051}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to log all data written to the history control to a file.
+\par 
+\par Data written to the log file will be appended to the end of the file.  
+\par 
+\par Tabs stops are translated as 8 character in the control, and are not replaced with spaces when data is written to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10052}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The address of a known WhoIs server.
+\par 
+\par Internic.net is a good choice.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10053}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The output display is an instance of a History control that ships with Ultimate TCP/IP. 
+\par 
+\par The control privides for date stamping and logging to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10058}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The address of the machine to Ping.
+\par 
+\par This can take the form of a domain name (dundas.com) or a dotted IP address (207.219.70.5).
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10059}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Ping the target machine.
+\par 
+\par The class uses a socket type SOCK_RAW.  On  Windows NT, the user must be logged on with administrator rights to create this type of socket.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10060}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Time interval between ICMP Echo requests (Pings) in milliseconds.
+\par 
+\par Increase or decrease this value to modify the frequency at which ICMP requests are made.  Note that requests are sequential.  Whatever interval is specified, the next request packet will not be sent until the last requests response is received or the timeout reached.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10061}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Specifies a time to wait for a response to an ICMP query.  
+\par 
+\par Use this parameter as a limiting factor.  Small values tend only to shift the receipt of an ICMP resopnse to a subsequent receipt.  The real intention of this value is to retreat from listening for packets that will not be responded to.  Many busy hosts will maintain firewalls to absorb ICMP requests, and not all will respond with a Destination Unreachable code.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10062}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The number of bytes of data to send with the ICMP request.
+\par 
+\par Be conservative here, unless you have good reason to map statistics related to performance issues for a trace.  32 bytes is fine for most purposes.  Sending Ping or TraceRoute ICMP requests with large amounts of data uses resources both in transit and at the target machine.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10063}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The number of Echo requests (hits) to send.
+\par 
+\par Useful if the average response time is of primary interest. Coupled with the interval parameter may be used to gather statistics over a wider time base.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10064}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The maximum number of timeouts to tolerate before abandoning the operation.
+\par 
+\par Some attempts to send ICMP requests to a remote host will not be responded to for secuity and performance reasons.  Here you can specify a maximum number of timeouts to receive before abandoning the operation.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10065}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 If checked, the domain name for the response will be resolved (if possible) and displayed.
+\par 
+\par The IP packet carrying the ICMP response contains the IP address of the sender.  In most cases this can be resolved to a readble internet name.  
+\par 
+\par Use of this option can slow the operation considerably.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10066}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Each new query clears the contents of the control.  Data logged to file will accumulate.
+\par 
+\par You can use the same file for this and other dialog pages if you wish to organize a session into one log.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10067}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 Check this to log all data written to the history control to a file.
+\par 
+\par Data written to the log file will be appended to the end of the file.  
+\par 
+\par Tabs stops are translated as 8 character in the control, and are not replaced with spaces when data is written to file.
+\par \page 
+{\cs22\super #{\footnote {\cs22\super #} IDH_10068}} 
+\deflang1033\pard\li30\ri130\plain\f5\fs16\cf0 The output display is an instance of a History control that ships with Ultimate TCP/IP. 
+\par 
+\par The control privides for date stamping and logging to file.
+\par }

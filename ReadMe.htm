@@ -1,0 +1,407 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","660066","Custom #1","0") -->
+  <!-- $MVD$:color("19","99ff","Custom #2","0") -->
+  <TITLE>ReadMe</TITLE>
+  <META NAME="generator" CONTENT="Microsoft FrontPage 6.0">
+  <META NAME="generator" CONTENT="Microsoft FrontPage 4.0">
+  <SCRIPT LANGUAGE="javascript" TITLE="BSSC Special Effects" SRC="BSSCDHTM.js">
+</SCRIPT><LINK
+  REL="StyleSheet" HREF="MSTYLE.CSS"></HEAD>
+ <BODY BGCOLOR="WHITE">
+  <H1 STYLE="text-align : center;" ALIGN=CENTER>
+   </H1>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+  <P>
+   <!-- $MVD$:spaceretainer() -->This document contains information concerning 
+	The Ultimate ToolBox TCP/IP Version 
+   4.2. There is a Requirements section, followed by a brief description 
+   of each secure sample application, and then an Installation section.</P>
+  <ul>
+	<li><A HREF="#Version">The Ultimate ToolBox TCP/IP Version 4.2</A></li>
+	<li><A HREF="#requirements">Requirements</A></li>
+	<li><A HREF="#Overview_of_the_Sample_Applications">Overview of the Samples</A></li>
+	<li><A HREF="#sample">Overview of the Secure Samples</A></li>
+	<li><A HREF="#install">Installation and Configuration</A></li>
+	</ul>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+  <H3>
+   <A NAME="Version">The Ultimate ToolBox</A> TCP/IP Version 4.2</H3>
+  <P>
+   The <SPAN STYLE="font-weight : bold;">C++ Client Edition</SPAN> 
+   contains a full set of C++ class libraries, with client side source 
+   code for comprehensive Internet and Intranet application development 
+   and enablement. Designed specifically for Visual C++ developers, this 
+   kit has the power and flexibility that you demand.</P>
+  <P>
+   The <SPAN STYLE="font-weight : bold;">Enterprise Edition</SPAN> 
+   contains all the source code, controls and protocols you require to 
+   develop complete client/server solutions, using both the client side 
+   and server side frameworks.</P>
+  <P>
+   The <SPAN STYLE="font-weight : bold;">SSL Extension</SPAN> is 
+   available as a C++ class library or full-blown source code. Develop 
+   secure client/server solutions quickly and easily with our SSL Extension.</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+  <H3>
+   <A NAME="requirements"></A>Minimum Requirements for the SSL/TLS 
+   Enabled edition of The Ultimate ToolBox TCP/IP Library</H3>
+  <P>
+   <!-- $MVD$:spaceretainer() -->Please keep in mind: these requirements apply to both the development 
+   environment and the target platforms the applications are deployed on.<BR>
+   <BR>
+   <SPAN STYLE="font-weight : bold;">Operating System Minimum Requirements</SPAN><BR>
+   </P>
+  <UL>
+   <LI CLASS="mvd-P">
+   <P>
+    Windows 2000 5.00.2195<BR>
+    <LI CLASS="mvd-P">Windows NT 4.00.1381 SP4 (the latest service pack 
+    is recommended; currently it is 6a)<BR>
+    <LI CLASS="mvd-P">Windows ME 4.90.3000<BR>
+    <LI CLASS="mvd-P">Windows 98 4.10.1998 (see below for special set up requirements)<BR>
+    <LI CLASS="mvd-P">Windows 95 4.00.950A SP1 (see below for special set 
+    up requirements)</P>
+   </UL>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;<BR>
+   The following requirements apply only to Windows 95 and Windows 98.</P>
+  <P>
+   1. Install Internet Explorer 5.01 SP1 or later.</P>
+  <P>
+   2. Install the Directory Services client for Windows 95/98. The <SPAN STYLE="font-style : italic;font-weight : normal;">dsclient.exe</SPAN> 
+   can be found on the Windows 2000 server CD-ROM in <SPAN STYLE="font-style : italic;">\clients\win9x\dsclient.exe</SPAN>.</P>
+  <P>
+   3. Update the system registry to include the <SPAN STYLE="font-style : italic;">schannel.dll</SPAN> 
+   library in the list of security providers. Using the registry editor, 
+   navigate to the following registry key:<BR>
+   </P>
+  <BLOCKQUOTE>
+   <BLOCKQUOTE>
+    <P>
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders.</P>
+    </BLOCKQUOTE>
+   </BLOCKQUOTE>
+  <P STYLE="text-align : left;" ALIGN=LEFT>
+   4. Modify the following registry value:</P>
+  <BLOCKQUOTE>
+   <BLOCKQUOTE>
+    <P STYLE="text-align : left;" ALIGN=LEFT>
+     Value Name: SecurityProviders<BR>
+     Data Type: REG_SZ<BR>
+     <SPAN STYLE="font-weight : normal;">Value: </SPAN><SPAN STYLE="font-style : normal;font-weight : normal;">Append</SPAN><SPAN STYLE="font-weight : normal;"> 
+     &quot;,schannel.dll&quot; (with comma, no quotes) to previous string.</SPAN></P>
+    </BLOCKQUOTE>
+   </BLOCKQUOTE>
+  <P>
+   5. After the software has been installed and the registry updated, 
+   reboot the system.</P>
+	<P>
+   <SPAN STYLE="font-weight : bold;">Development Environment</SPAN></P>
+  <P>
+   The development environment MUST have Platform SDK installed (this 
+   requirement does not apply to target platforms the applications are 
+   deployed on). To get the latest released version of the Platform SDK, 
+   subscribe to the Microsoft Developer Network (MSDN(tm)) or visit our 
+   Web site at <A HREF="http://msdn.microsoft.com/developer/sdk">http://msdn.microsoft.com/developer/sdk</A></P>
+  <P>
+   <!-- $MVD$:spaceretainer() --><SPAN STYLE="font-weight : bold;">WinInet</SPAN></P>
+  <P>
+   The Ultimate ToolBox Secure TCP/IP does not use Microsoft's proprietary WinInet 
+   library internally. The Ultimate ToolBox TCP/IP 4.1 uses the standard Windows 
+   Security Support Provider Interface (SSPI). This SSPI follows the 
+   standard published in &quot;Generic Security Service Application 
+   Program Interface, Version 2&quot; (RFC 2078).</P>
+	<P>
+   <SPAN STYLE="font-weight : bold;">Royalty and Patent Issues</SPAN></P>
+  <P>
+   The Ultimate ToolBox TCP/IP 4.1 does not require Third Party Licensing for patented 
+   materials. The Ultimate ToolBox TCP/IP 4.1 employs standard Windows libraries which 
+   are included with the operating system and the current version of 
+   Internet Explorer. The Ultimate ToolBox TCP/IP 4.1 is Royalty Free!</P>
+	<P>
+   <SPAN STYLE="font-weight : bold;">Encryption Strength and Key Length</SPAN></P>
+  <P>
+   The encryption strength of the installed MS Internet Explorer effects 
+   your ability to successfully request, install, and use Certificate 
+   Public Keys larger than 512. We highly recommend that users upgrade 
+   their browsers to the latest versions available.</P>
+	<P>
+   <SPAN STYLE="font-weight : bold;">Explorer Encryption Pack</SPAN></P>
+  <P>
+   Note: The Microsoft Internet Explorer High Encryption Pack is 
+   eligible for export from the U.S. to all customers worldwide, except 
+   to U.S. embargoed destinations. Information on exporting Microsoft 
+   products is available at &lt;<A HREF="http://www.microsoft.com/exporting/">http://www.microsoft.com/exporting/</A>&gt;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+  <H3>
+   Overview of the The Ultimate ToolBox TCP/IP Sample Applications<A NAME="Overview_of_the_Sample_Applications"></A></H3>
+  <BLOCKQUOTE>
+   <P>
+    There are twelve (12) VC++, Platform SDK sample applications.</P>
+   </BLOCKQUOTE>
+  <P>
+   <SPAN STYLE="font-weight : bold;">Client Sample Applications:</SPAN></P>
+  <P>
+   1) History Control</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp; The History control provides 
+    a fast and easy way to output data to a window.&nbsp; The user has 
+    the option of logging status information to a file, changing various 
+    font attributes of text (background and foreground color, alignment, 
+    etc.) as well as specifying the path and filename of the logfile.</P>
+   </BLOCKQUOTE>
+  <P>
+   2) Finger Client</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>: Allows the user to finger a valid 
+    address (assuming the server of the specified address supports the 
+    finger protocol).&nbsp; The results of the finger can either be 
+    logged to a specified filename or retrieved using the GetReturnLine function.</P>
+   </BLOCKQUOTE>
+  <P>
+   3) FTP Client</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>: The primary function of FTP is to 
+    transfer files efficiently and reliably among Hosts and to allow the 
+    convenient use of remote file storage capabilities.&nbsp; The FTP 
+    control lets the user handle FTP connections quickly and painlessly. 
+    &nbsp; Directory functions, resuming uploads, control over timeout 
+    settings and a choice of transfer types are but a few of the features 
+    that this robust class offers you. Firewall transfers (PASV) are supported.</P>
+   </BLOCKQUOTE>
+  <P>
+   4) HTTP Client</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp; The HTTP control offers 
+    convenient ways to interact with Web servers.&nbsp; Various http 
+    header fields can be quickly obtained, and support is implemented for 
+    dealing with proxy servers as well.&nbsp; In addition, you can send 
+    custom commands to servers via our CommandLine function.&nbsp;<BR>
+    Retrieved data can either be stored into memory and then retrieved or 
+    it can be piped directly into a file.&nbsp;<BR>
+    Some of the other features include setting different communication 
+    ports, user-defined timeout intervals, and being able to adjust the 
+    buffer in memory which stores retrieved data.</P>
+   </BLOCKQUOTE>
+  <P>
+   5) Mail Client</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>: This control implements the client 
+    part of the Simple Mail Transfer Protocol; therefore, you can easily 
+    connect to the SMTP server and send e-mail messages.&nbsp; The sample 
+    Mail client also implements the client part of the Post Office 
+    Protocol; It's used to manage the new messages of the user stored on 
+    the server.&nbsp; With the help of this control, you can easily 
+    connect to the POP3 server, get the number of messages available, 
+    retrieve messages or part of them, and mark/unmark messages for deletion.<BR>
+    </P>
+   </BLOCKQUOTE>
+  <P>
+   6) MX Lookup Control</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>: This control performs DNS lookups 
+    specifically for MX records for a given domain.<BR>
+    A robust SMTP server (and some clients) needs to be able to properly 
+    identify all of the mail exchange (MX) servers associated with a 
+    given domain. These exchanges are retrieved using the Domain Name 
+    Service (DNS) protocol.<BR>
+    This control uses an extensive search algorithm which allows it to 
+    find all the MX records even if the DNS server settings are not 
+    completely correct.</P>
+   </BLOCKQUOTE>
+  <P>
+   7) Ping Control</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp; Send and receive ICMP echo 
+    (Ping) messages.&nbsp; Discover if a remote address is available 
+    either for debugging or before embarking on a connect operation.</P>
+   </BLOCKQUOTE>
+  <P>
+   8) UDP Control</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>: Monitor and Trace.</P>
+   <P>
+    <!-- $MVD$:spaceretainer() --></P>
+   </BLOCKQUOTE>
+  <P>
+   <SPAN STYLE="font-weight : bold;">Server Sample Applications:</SPAN></P>
+  <P>
+   1) &nbsp;Finger Server Control</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp;Implements the Finger user 
+    information protocol server which provides an interface to a remote 
+    user information client program. The client sends a request to the 
+    server on a particular user or domain, and the server returns with 
+    all of the available information.</P>
+   </BLOCKQUOTE>
+  <P>
+   2) &nbsp;FTP Server</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp; This control encapsulates 
+    the server frame of the File Transfer Protocol (FTP), RFC 959. You 
+    can use it as provided (i.e. without deriving your own class.) to 
+    implement a fully functional FTP server. On the other hand, this 
+    class allows you to write your own custom FTP server that your client 
+    programs will be contacting.&nbsp;</P>
+   </BLOCKQUOTE>
+  <P>
+   3) HTTP Server</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp;Implements the Hypertext 
+    Transfer Protocol (HTTP) server.</P>
+   </BLOCKQUOTE>
+  <P>
+   4) Mail Server&nbsp;</P>
+  <BLOCKQUOTE>
+   <P>
+    <I>Functionality Demonstrated</I>:&nbsp;This control implements SMTP, 
+    POP3, and enhanced NS Lookup<!-- $MVD$:spaceretainer() -->&nbsp;</P>
+   </BLOCKQUOTE>
+  <H3>
+   <A NAME="sample"></A>Overview of the Secure Sample Applications</H3>
+  <BLOCKQUOTE>
+   <P>
+    There are ten (10) VC++ sample applications.</P>
+   <P>
+    <SPAN STYLE="font-weight : bold;">Secure Client Sample Applications:</SPAN></P>
+   <P>
+    1) Secure Echo Client</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp; SSL-enabled client 
+     application to be used with our SSL-enabled Echo server.</P>
+    </BLOCKQUOTE>
+   <P>
+    2) Secure FTP Client</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>: Transfer files to and from secure 
+     FTP servers. This is the SSL-enabled version of our FTP client sample.</P>
+    </BLOCKQUOTE>
+   <P>
+    3) Secure HTTP Client</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>: Can be used to retrieve and post 
+     documents on secure servers on the World Wide Web.</P>
+    </BLOCKQUOTE>
+   <P>
+    4) Secure IMAP4&nbsp;Client</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp; SSL-enabled version of our 
+     IMAP4 client. Use the Internet Message Access Protocol to communicate 
+     with IMAP servers.</P>
+    </BLOCKQUOTE>
+   <P>
+    5) Secure Mail Client</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>: SSL-enabled mail client application.<!-- $MVD$:spaceretainer() -->&nbsp;</P>
+    </BLOCKQUOTE>
+   <P>
+    <SPAN STYLE="font-weight : bold;">Secure Server Sample Applications:</SPAN></P>
+   <P>
+    1) &nbsp;Secure Echo Server</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp;SSL-enabled Echo server 
+     application to be used with our SSL-enabled Echo client.</P>
+    </BLOCKQUOTE>
+   <P>
+    2) &nbsp;Secure FTP Server</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp; SSL-enabled server application</P>
+    </BLOCKQUOTE>
+   <P>
+    3) Secure HTTP Server</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp;SSL-enabled HTTP server application</P>
+    </BLOCKQUOTE>
+   <P>
+    4) Secure Mail Server&nbsp;</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp;SSL-enabled mail server application<!-- $MVD$:spaceretainer() -->&nbsp;</P>
+    </BLOCKQUOTE>
+   <P>
+    <SPAN STYLE="font-weight : bold;">Utilities:</SPAN></P>
+   <P>
+    1) &nbsp;Certificate Manager</P>
+   <BLOCKQUOTE>
+    <P>
+     <I>Functionality Demonstrated</I>:&nbsp;How to manage a certificate 
+     list within a system store.</P>
+    </BLOCKQUOTE>
+   </BLOCKQUOTE>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+  <H3>
+   <A NAME="install"></A>Installation and Configuration</H3>
+  <P>
+   The following start menu entries will be created during the installation
+   (note that the entries for the documentation will be made even if you choose
+   not to install the documentation):</P>
+  <BLOCKQUOTE>
+   <P>
+    Dundas Software | Dundas TCPIP 4.1 | Secure Class Reference.&nbsp; Documentation for classes and security classes.</P>
+   <P>
+    Dundas Software | Dundas TCPIP 4.1 | Control Reference.&nbsp;
+    Documentation for ActiveX controls.</P>
+   <P>
+    Dundas Software | Dundas TCPIP 4.1 | Uninstall TCPIP 4.1</P>
+   </BLOCKQUOTE>
+  <P>
+   The following files will be copied to your computer with The 
+	Ultimate ToolBox TCP/IP Version 4.2:
+   <BR>
+   </P>
+  <BLOCKQUOTE>
+   <P>
+    Root Directory - <SPAN STYLE="font-style : italic;">ReadMe.htm</SPAN> 
+    (this file)</P>
+   <P>
+    Security samples will be installed into: <SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Security\Examples</SPAN></P>
+   <P>
+    Security <SPAN STYLE="font-style : italic;">Include</SPAN><SPAN STYLE="font-style : normal;"> 
+    files will be installed into: </SPAN><SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Security\Include</SPAN></P>
+   <P>
+    TestCert.pfx will be installed into:<SPAN STYLE="font-style : normal;"> </SPAN><SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Security\Lib (compiled secure libs will be placed here)</SPAN></P>
+   <P>
+    All other samples will be installed into: <SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Examples</SPAN></P>
+   <P>
+    <SPAN STYLE="font-style : italic;">Source</SPAN> files: <SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Source</SPAN></P>
+   <P>
+    <SPAN STYLE="font-style : italic;">Include</SPAN> files: <SPAN STYLE="font-weight : bold;">&lt;Install
+     Directory&gt;\Include</SPAN></P>
+   </BLOCKQUOTE>
+	<P>
+   &nbsp;
+ </BODY>
+</HTML>

@@ -1,0 +1,412 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "SecurityRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CERT_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 492, 222
+STYLE DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_STORE_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | TVS_FULLROWSELECT | WS_BORDER | 
+                    WS_TABSTOP,5,5,140,205
+    CONTROL         "List1",IDC_CERT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,165,5,315,205
+    LTEXT           "Static",IDC_STATIC_SPLIT,140,5,20,205,NOT WS_VISIBLE
+END
+
+IDD_COMMON_NAME DIALOG DISCARDABLE  0, 0, 154, 36
+STYLE DS_CENTER | WS_CHILD | WS_CAPTION
+CAPTION "Certificate Request Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMON_NAME,5,10,145,14,ES_AUTOHSCROLL
+    LTEXT           "Common &Name:",-1,5,0,75,8
+END
+
+IDD_CONTACT_DLG DIALOG DISCARDABLE  0, 0, 159, 95
+STYLE DS_CENTER | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Contact Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC__FULL_NAME,5,10,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,5,35,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE_NUMBER,5,60,145,14,ES_AUTOHSCROLL
+    LTEXT           "&Phone Number:",-1,5,50,74,8
+    LTEXT           "Email &Address:",-1,5,25,99,8
+    LTEXT           "Full &Name:",-1,5,0,75,8
+END
+
+IDD_ERROR_DLG DIALOG DISCARDABLE  0, 0, 187, 107
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Certificate Signing Request generation failed .",-1,23,
+                    10,142,14
+    LTEXT           "Please, click on the back button to review and correct the information you have enterd.",
+                    -1,23,26,142,22
+    GROUPBOX        "Error Text",-1,13,52,167,48
+    CTEXT           "Error",IDC_ERRRO_CODE,23,66,150,20
+END
+
+IDD_GEOGRAPHIC_DLG DIALOG DISCARDABLE  0, 0, 189, 105
+STYLE DS_CENTER | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Certificate Request Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Country/Region:",-1,5,0,105,8
+    EDITTEXT        IDC_EDIT_COUNTRY,5,10,145,14,ES_AUTOHSCROLL
+    LTEXT           "&State/Province:",-1,5,25,85,8
+    EDITTEXT        IDC_STAT_PROVINCE,5,35,145,14,ES_AUTOHSCROLL
+    LTEXT           "City/&Locality:",-1,5,50,95,8
+    EDITTEXT        IDC_CITY_LOCALITY,5,60,145,14,ES_AUTOHSCROLL
+END
+
+IDD_KEY_STRENGTH DIALOG DISCARDABLE  0, 0, 222, 146
+STYLE DS_CENTER | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Certificate Request Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CERTNAME,5,10,145,14,ES_AUTOHSCROLL
+    LTEXT           "Key &Name:",IDC_STATIC,5,0,85,8
+    COMBOBOX        IDC_COMBOKEYLENGTH,5,35,146,66,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Key &Length:",IDC_STATIC,5,25,66,8
+    LTEXT           "",IDC_STATIC_NOTE,5,52,215,75
+END
+
+IDD_ORG_DLG DIALOG DISCARDABLE  0, 0, 154, 65
+STYLE DS_CENTER | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Certificate Request Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ORGANIZATION,5,10,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORGANIZATION_UNIT,5,35,145,14,ES_AUTOHSCROLL
+    LTEXT           "&Organization:",-1,5,0,75,8
+    LTEXT           "Organization &Unit:",-1,5,25,71,8
+END
+
+IDD_PREVIEW_DLG DIALOG DISCARDABLE  0, 0, 224, 175
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREV_COMMON_NAME,5,10,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_PREV_KEY_NAME,5,38,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_PREV_KEY_STRENGTH,5,65,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_PREV_ORG,5,92,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PREV_ORG_UNIT,5,120,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_ISSUED_TO,120,10,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PREV_PHONE,120,38,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PREV_EMAIL,120,65,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PREV_COUNTRY,120,92,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Key Name",-1,5,28,85,8
+    LTEXT           "Key Length",-1,5,56,65,8
+    LTEXT           "Common Name",-1,5,0,75,8
+    LTEXT           "Email",-1,120,56,85,8
+    LTEXT           "Country",-1,120,82,65,8
+    LTEXT           "Organization",-1,5,82,70,8
+    LTEXT           "Organization Unit",-1,5,110,90,8
+    LTEXT           "Phone Number",-1,120,28,85,8
+    LTEXT           "State",-1,120,110,50,8
+    EDITTEXT        IDC_PREV_STATE,120,120,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "File Name",-1,56,138,84,8
+    EDITTEXT        IDC_PREV_FILE_NAME,56,148,94,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Issued To",-1,120,0,85,8
+END
+
+IDD_REQUEST_FILE_DLG DIALOG DISCARDABLE  0, 0, 166, 67
+STYLE DS_CENTER | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Certificate Request Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&File Name:",-1,5,0,75,8
+    EDITTEXT        IDC_FILE_NAME,5,10,145,14,ES_AUTOHSCROLL
+    CONTROL         "Open with &Notepad",IDC_OPEN_WITH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,30,100,10
+END
+
+IDD_CERT_INSTALL_DIALOG DIALOG DISCARDABLE  0, 0, 327, 167
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Install Certificate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,10,20,255,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BUTTON_BROWSE,270,20,50,14
+    CONTROL         "From &File:",IDC_RADIO_FILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,10,46,10
+    CONTROL         "From &Text:",IDC_RADIO_TEXT,"Button",BS_AUTORADIOBUTTON,
+                    10,40,49,10
+    EDITTEXT        IDC_EDIT_TEXT,10,50,310,90,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Install",IDOK,108,147,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,147,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "SecurityRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CERT_LIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_COMMON_NAME, DIALOG
+    BEGIN
+        RIGHTMARGIN, 144
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_CONTACT_DLG, DIALOG
+    BEGIN
+        VERTGUIDE, 25
+        HORZGUIDE, 24
+        HORZGUIDE, 50
+        HORZGUIDE, 79
+    END
+
+    IDD_ERROR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_GEOGRAPHIC_DLG, DIALOG
+    BEGIN
+        VERTGUIDE, 24
+        VERTGUIDE, 170
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 75
+        HORZGUIDE, 80
+    END
+
+    IDD_KEY_STRENGTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        VERTGUIDE, 24
+        VERTGUIDE, 170
+        BOTTOMMARGIN, 139
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 70
+    END
+
+    IDD_ORG_DLG, DIALOG
+    BEGIN
+        VERTGUIDE, 25
+        BOTTOMMARGIN, 41
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+    END
+
+    IDD_REQUEST_FILE_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 61
+        VERTGUIDE, 22
+        BOTTOMMARGIN, 19
+        HORZGUIDE, 25
+    END
+
+    IDD_CERT_INSTALL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_STORE_LOCATION BITMAP  DISCARDABLE     "location.bmp"
+IDB_BITMAP_STORE_MASK   BITMAP  DISCARDABLE     "store_m.bmp"
+IDB_BITMAP_CERTIFICATE_MASK BITMAP  DISCARDABLE     "certif_m.bmp"
+IDB_BITMAP_CERTIFICATE  BITMAP  DISCARDABLE     "certif.bmp"
+IDB_BITMAP_STORE        BITMAP  DISCARDABLE     "store.bmp"
+IDB_BITMAP_STORE_LOCATION_MASK BITMAP  DISCARDABLE     "location_m.bmp"
+IDB_BITMAP_STORE_LOCATION_SEL BITMAP  DISCARDABLE     "location_s.bmp"
+IDB_BITMAP_STORE_LOCATION_SEL_MASK BITMAP  DISCARDABLE     "location_s_m.bmp"
+IDB_BITMAP_KEY          BITMAP  DISCARDABLE     "key.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_CERT_LIST_SMALL ICON    DISCARDABLE     "icon_cer_s.ico"
+IDI_ICON_CERT_LIST_LARGE ICON    DISCARDABLE     "icon_cer_l.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "The Ultimate Toolbox\0"
+            VALUE "FileDescription", "Secure Layer\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Secure Layer\0"
+            VALUE "LegalCopyright", "Copyright © 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UTSecureLayer.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Ultimate TCP/IP\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE1              "Key Name and Length"
+    IDS_SUBTITLE1           "Type the name of the key to be generated for the certificate. This name should be easy for you to remember."
+    IDS_TITLE2              "Organization Information"
+    IDS_SUBTITLE2           "Type your organization's name and the name of your division or department."
+    IDS_SUBTITLE3           "Type the common name for your site. If the server is on the Internet, use a valid DNS name."
+    IDS_SUBTITLE4           "Type the two character country code and full name of the state and city."
+    IDS_TITLE3              "Common Name"
+    IDS_TITLE5              "Contact Information"
+    IDS_SUBTITLE5           "Type the contact information."
+    IDS_TITLE4              "Geographical Information"
+    IDS_TITLE6              "Request File Name"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBTITLE6           "Type the file name of the new certificate request."
+    IDS_TITLE7              "Request Preview"
+    IDS_SUBTITLE7           "Click Finish if you want to generate a request with the specified information."
+    IDS_TITLE9              "Certificate Request Wizard Error "
+    IDS_SUBTITLE9           "The system was unable to create a certificate request."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

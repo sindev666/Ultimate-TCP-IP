@@ -1,0 +1,30 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: Свойству "IntermediateOutputPath" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: Свойству "DebugType" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: Свойству "CleanFile" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  StdAfx.cpp
+cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  UTSecureLayer.cpp
+  UT_CertWizard.cpp
+  UTSecureSocket.cpp
+P:\ide\Ultimate TCP-IP\Security\Source\UTSecureSocket.cpp(20): warning C4603: _WINSOCKAPI_: макрос не определен или определение изменилось после использования предкомпилированного заголовка
+P:\ide\Ultimate TCP-IP\Security\Source\UTSecureSocket.cpp(20): message : Добавление макроопределения в предкомпилированный заголовок вместо определения его здесь
+P:\ide\Ultimate TCP-IP\Security\Source\UTSecureSocket.cpp(24): message : использование предварительно скомпилированного заголовка
+P:\ide\Ultimate TCP-IP\Security\Source\UTSecureSocket.cpp(1103,17): warning C4456: объявление "nError" скрывает предыдущее локальное объявление
+P:\ide\Ultimate TCP-IP\Security\Source\UTSecureSocket.cpp(957,9): message : см. объявление "nError"
+  UTCertifMan.cpp
+  UTCertifListDlg.cpp
+P:\ide\Ultimate TCP-IP\Security\Source\UTCertifListDlg.cpp(347,13): warning C4456: объявление "lvi" скрывает предыдущее локальное объявление
+P:\ide\Ultimate TCP-IP\Security\Source\UTCertifListDlg.cpp(338,9): message : см. объявление "lvi"
+P:\ide\Ultimate TCP-IP\Security\Source\UTCertifListDlg.cpp(387,23): warning C4456: объявление "szBuffer" скрывает предыдущее локальное объявление
+P:\ide\Ultimate TCP-IP\Security\Source\UTCertifListDlg.cpp(339,9): message : см. объявление "szBuffer"
+  UTCertifInstDlg.cpp
+  UT_StrOp.cpp
+  utstrlst.cpp
+  utfile.cpp
+  Создание кода...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(P:\ide\Ultimate TCP-IP\Security\UTSecureLayer\Debug\UTSecureLayer.dll) не соответствует значению свойства выходного файла (P:\ide\Ultimate TCP-IP\Security\Lib\UTSecureLayerD.dll) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(UTSecureLayer) не соответствует значению свойства выходного файла (UTSecureLayerD) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+utfile.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+     Создается библиотека ../Lib/UTSecureLayerD.lib и объект ../Lib/UTSecureLayerD.exp
+  UTSecureLayer.vcxproj -> P:\ide\Ultimate TCP-IP\Security\UTSecureLayer\Debug\UTSecureLayer.dll
